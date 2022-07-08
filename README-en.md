@@ -1,5 +1,5 @@
 # Rating Review
-App to test SKStoreReviewController 
+App to test `SKStoreReviewController`.
 
 It is very simple to implement the alert to make easier to users to make comments at the store.
 
@@ -16,13 +16,13 @@ import StoreKit
 
 and, where you decided to show the alert, you can call
 
-if your app target deployment is lower than `iOS 14.0`, you will have to add
+- if your app target deployment is lower than `iOS 14.0`, you will have to add
 
 ```
 SKStoreReviewController.requestReview()
 ```
 
-but, if your app target deployment is higher than `iOS 14.0`, you will have to add
+- but, if your app target deployment is higher than `iOS 14.0`, you will have to add
 
 ```
 if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {

@@ -30,17 +30,6 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
-    
-    lazy var button: UIButton = {
-        let button = UIButton(frame: .zero)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Buy", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = UIColor.red
-        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buy)))
-        return button
-    }()
-
     private func setupUI() {
         view.backgroundColor = .white
         view.addSubview(titleLabel)
@@ -50,10 +39,6 @@ class ViewController: UIViewController {
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 24),
             titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24)
         ])
-    }
-    
-    @objc func buy() {
-        
     }
 }
 

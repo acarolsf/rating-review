@@ -7,13 +7,17 @@
 
 import UIKit
 
-@main
+let certificate = "StoreKitTestCertificate" 
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Increment number of the times app was launched
+        RatingManager.incrementNumberOfTimesLaunched()
+        
         return true
     }
 

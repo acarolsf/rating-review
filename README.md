@@ -5,4 +5,4 @@ This example was made using: [How to use SKStoreReviewController tutorial](https
 
 [README in English](/README-en.md)
 
-[README em Portugês](README-pt.md)
+[README em Português](README-pt.md)
